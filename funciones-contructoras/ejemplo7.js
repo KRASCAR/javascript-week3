@@ -1,3 +1,4 @@
+// Funcion constructora
 function Animal(nombre, energia) {
   // const this = Object.create(Animal.prototype)
 
@@ -17,4 +18,7 @@ const lazy = new Animal("Lazy", 10);
 
 console.log(leo);
 console.log(leo.comer(12))
-console.log(lazy)
+console.log(Animal.prototype)
+console.log(lazy.prototype)// undefined
+console.log(Object.getPrototypeOf(lazy))
+
