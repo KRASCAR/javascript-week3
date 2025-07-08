@@ -13,7 +13,15 @@ const funciones_vitales = {
   },
 };
 
-let animal = {};
-animal.__proto__ = funciones_vitales;
+// let animal = {};
+// animal.__proto__ = funciones_vitales;
 
-console.log(animal.comer(10))
+// console.log(animal.comer(10))
+
+//let animal = Object.create(funciones_vitales);
+
+let animal = new Object(funciones_vitales);
+animal.nombre = "Tortuga";
+
+console.log(animal.comer(20));
+
