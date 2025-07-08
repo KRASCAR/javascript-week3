@@ -19,3 +19,10 @@ animal.jugar = function (tiempo) {
   console.log(`${this.nombre} esta jugando...`);
   this.energia -= tiempo;
 };
+
+// segunda manera:
+
+let animal2 = {
+  especie: "felino",
+  nombre: "perro",
+};
